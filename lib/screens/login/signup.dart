@@ -44,7 +44,7 @@ class _SignUpState extends State<SignUp> {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,
-                  padding: const EdgeInsets.symmetric(horizontal: 100)),
+                  padding: const EdgeInsets.symmetric(horizontal: 120)),
               child: const Text(
                 'Log In',
                 style: TextStyle(
@@ -61,7 +61,7 @@ class _SignUpState extends State<SignUp> {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                   // backgroundColor: Colors.blue,
-                  padding: const EdgeInsets.symmetric(horizontal: 100)),
+                  padding: const EdgeInsets.symmetric(horizontal: 120)),
               child: const Text(
                 'Sign Up',
                 style: TextStyle(
@@ -73,7 +73,7 @@ class _SignUpState extends State<SignUp> {
                 Navigator.push(
                     // ignore: prefer_const_constructors
                     context,
-                    MaterialPageRoute(builder: (context) => SignUp1()));
+                    MaterialPageRoute(builder: (context) => const SignUp1()));
               },
             ),
           ],

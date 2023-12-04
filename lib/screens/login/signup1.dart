@@ -1,6 +1,8 @@
 // import 'package:easy_insure/components/verify.dart';
+// import 'package:easy_insure/components/signup_button.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class SignUp1 extends StatefulWidget {
   const SignUp1({super.key});
 
@@ -42,7 +44,20 @@ class _SignUp1State extends State<SignUp1> {
               height: 20,
             ),
             // ---textfields---
-
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 25.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    'Enter email',
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  ),
+                ],
+              ),
+            ),
             // ---email---
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.0),
@@ -62,7 +77,20 @@ class _SignUp1State extends State<SignUp1> {
               ),
             ),
             SizedBox(height: 20),
-
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 25.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    'New password',
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  ),
+                ],
+              ),
+            ),
             // ---password---
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.0),
@@ -82,6 +110,20 @@ class _SignUp1State extends State<SignUp1> {
               ),
             ),
             SizedBox(height: 20),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 25.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    'Confirm password',
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  ),
+                ],
+              ),
+            ),
 
             // ---confirm password---
             Padding(
@@ -103,7 +145,12 @@ class _SignUp1State extends State<SignUp1> {
             ),
             SizedBox(height: 20),
 
-            // ---sing up button---
+            // ---sign up button---
+
+            // SignUpButton(onTap: signUserUp,
+            // ),
+
+            SizedBox(height: 50),
           ]),
         ),
       ),

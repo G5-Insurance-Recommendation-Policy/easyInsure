@@ -68,6 +68,8 @@ flutter:
     - assets/onboarding2.png
     - assets/onboarding3.png
     - assets/logo2.png
+    - assets/google1.png
+    - assets/apple1.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
