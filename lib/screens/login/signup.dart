@@ -1,4 +1,5 @@
 import 'package:easy_insure/screens/login/login.dart';
+import 'package:easy_insure/screens/login/signup1.dart';
 import 'package:flutter/material.dart';
 
 class SignUp extends StatefulWidget {
@@ -43,7 +44,7 @@ class _SignUpState extends State<SignUp> {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,
-                  padding: const EdgeInsets.symmetric(horizontal: 100)),
+                  padding: const EdgeInsets.symmetric(horizontal: 120)),
               child: const Text(
                 'Log In',
                 style: TextStyle(
@@ -52,15 +53,15 @@ class _SignUpState extends State<SignUp> {
                     color: Colors.white),
               ),
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const LogIn()));
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => LogIn()));
               },
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                   // backgroundColor: Colors.blue,
-                  padding: const EdgeInsets.symmetric(horizontal: 100)),
+                  padding: const EdgeInsets.symmetric(horizontal: 120)),
               child: const Text(
                 'Sign Up',
                 style: TextStyle(
@@ -69,23 +70,15 @@ class _SignUpState extends State<SignUp> {
                     color: Colors.black),
               ),
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const LogIn()));
+                Navigator.push(
+                    // ignore: prefer_const_constructors
+                    context,
+                    MaterialPageRoute(builder: (context) => const SignUp1()));
               },
             ),
           ],
         ),
       ),
-      // appBar: AppBar(
-      //   title: const Text(
-      //     'Get started',
-      //     style: TextStyle(
-      //       fontWeight: FontWeight.bold,
-      //       // color: Colors.blue
-      //     ),
-      //     textAlign: TextAlign.justify,
-      //   ),
-      // ),
     );
   }
 }
