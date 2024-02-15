@@ -38,6 +38,7 @@ dependencies:
   flutter_svg: ^2.0.9
   liquid_swipe: ^3.1.0
   smooth_page_indicator: ^1.1.0
+  firebase_core: ^2.24.0
 
 dev_dependencies:
   flutter_test:

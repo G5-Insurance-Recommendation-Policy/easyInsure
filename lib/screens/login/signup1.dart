@@ -1,10 +1,16 @@
 // import 'package:easy_insure/components/verify.dart';
-// import 'package:easy_insure/components/signup_button.dart';
+
+// import 'package:easy_insure/components/login_button.dart';
+// import 'package:easy_insure/screens/homepage.dart';
+import 'package:easy_insure/components/signup_button.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class SignUp1 extends StatefulWidget {
+// ignore: prefer_const_constructors_in_immutables
   const SignUp1({super.key});
+
+  void registerUser() {}
 
   @override
   State<SignUp1> createState() => _SignUp1State();
@@ -77,6 +83,42 @@ class _SignUp1State extends State<SignUp1> {
               ),
             ),
             SizedBox(height: 20),
+
+            // ---phone number---
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 25.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    'Phone number',
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15.0),
+              child: TextField(
+                decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderSide:
+                        BorderSide(color: Color.fromARGB(255, 235, 235, 235)),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                          color: Color.fromARGB(255, 145, 145, 145))),
+                  fillColor: Color.fromARGB(255, 247, 247, 247),
+                  filled: true,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 25.0),
               child: Row(
@@ -143,12 +185,10 @@ class _SignUp1State extends State<SignUp1> {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 30),
 
             // ---sign up button---
-
-            // SignUpButton(onTap: signUserUp,
-            // ),
+            SignUpButton(onTap: null),
 
             SizedBox(height: 50),
           ]),

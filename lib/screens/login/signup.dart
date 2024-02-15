@@ -79,16 +79,6 @@ class _SignUpState extends State<SignUp> {
           ],
         ),
       ),
-      // appBar: AppBar(
-      //   title: const Text(
-      //     'Get started',
-      //     style: TextStyle(
-      //       fontWeight: FontWeight.bold,
-      //       // color: Colors.blue
-      //     ),
-      //     textAlign: TextAlign.justify,
-      //   ),
-      // ),
     );
   }
 }
